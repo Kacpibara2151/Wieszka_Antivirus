@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wieszka Antivirus</title>
+    <meta name="description" content="Zaawansowany program antywirusowy Wieszka do dokładnego skanowania plików, ochrony w czasie rzeczywistym i analizy zagrożeń z AI." />
+    <meta property="og:title" content="Wieszka Antivirus" />
+    <meta property="og:description" content="Zaawansowany program antywirusowy Wieszka do dokładnego skanowania plików, ochrony w czasie rzeczywistym i analizy zagrożeń z AI." />
+    <style>
+      html, body, #root {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      (function() {
+        try {
+          var _nativeFetch = window.fetch ? window.fetch.bind(window) : null;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return _nativeFetch; },
+            set: function(fn) { _nativeFetch = fn; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // fallback if defineProperty fails
+        }
+      })();
+    </script>
+  </head>
+  <body class="transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

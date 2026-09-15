@@ -1,0 +1,291 @@
+@import "tailwindcss";
+
+html, body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Base theme colors */
+html.dark, body.dark {
+  background-color: #09090b;
+  color: #f8fafc;
+  color-scheme: dark;
+}
+
+html.light, body.light {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(14, 165, 233, 0.06) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: #0f172a;
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   ULTRA-PREMIUM CYBER LIGHT MODE SYSTEM (100X COOLER & MODERN)
+   ========================================================================== */
+
+/* 1. Main Canvas, Header & Whole-Page Surfaces */
+html.light header,
+html.light nav,
+html.light .bg-\[\#09090B\],
+html.light .bg-\[\#0a0f1d\],
+html.light .bg-\[\#0b0c10\],
+html.light .bg-\[\#0D0D12\],
+html.light .bg-\[\#0E1017\],
+html.light .bg-\[\#0F1118\],
+html.light .bg-\[\#12141D\],
+html.light .bg-\[\#04060A\],
+html.light .bg-\[\#050508\],
+html.light .bg-black,
+html.light .bg-slate-950 {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* 2. Primary Surface Cards & Containers */
+html.light .bg-\[\#121217\],
+html.light .bg-\[\#15151C\],
+html.light .bg-\[\#1A1C27\],
+html.light .bg-\[\#181820\],
+html.light .bg-\[\#1C2132\],
+html.light .bg-\[\#14141C\],
+html.light .bg-zinc-900,
+html.light .bg-neutral-900 {
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.07), 0 4px 10px -2px rgba(15, 23, 42, 0.04) !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* 3. Sub-cards, Inset Boxes, Terminal Blocks, Radar Bases & Inner Panels */
+html.light .bg-\[\#1A1A21\],
+html.light .bg-\[\#16161D\],
+html.light .bg-\[\#16161D\]\/80,
+html.light .bg-\[\#161822\],
+html.light .bg-\[\#151722\],
+html.light .bg-\[\#14161F\],
+html.light .bg-\[\#1A1A24\],
+html.light .bg-slate-900,
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/40 {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #1e293b !important;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.02) !important;
+}
+
+/* 4. Secondary Action Buttons, Chips & Soft Badges */
+html.light .bg-slate-800,
+html.light .bg-slate-800\/80,
+html.light .bg-slate-800\/60,
+html.light .bg-slate-800\/40,
+html.light .bg-slate-700,
+html.light .bg-zinc-800,
+html.light .bg-neutral-800 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+/* 5. Interactive Hover States for Light Mode */
+html.light .hover\:bg-\[\#1A1A21\]:hover,
+html.light .hover\:bg-\[\#121217\]:hover,
+html.light .hover\:bg-\[\#1A1A24\]:hover,
+html.light .hover\:bg-slate-800:hover,
+html.light .hover\:bg-slate-900:hover,
+html.light .hover\:bg-slate-700:hover {
+  background-color: #e2e8f0 !important;
+  border-color: #94a3b8 !important;
+  color: #0f172a !important;
+}
+
+/* 6. Universal Crisp Borders */
+html.light .border-slate-800,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/60,
+html.light .border-slate-800\/50,
+html.light .border-slate-800\/40,
+html.light .border-slate-800\/30,
+html.light .border-slate-800\/20,
+html.light .border-slate-700,
+html.light .border-slate-700\/80,
+html.light .border-slate-900,
+html.light .border-black,
+html.light .border-zinc-800,
+html.light .border-neutral-800 {
+  border-color: #e2e8f0 !important;
+}
+
+/* 7. Crisp High-Contrast Typography */
+html.light .text-white,
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300,
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-500,
+html.light .text-slate-600 {
+  color: #64748b !important;
+}
+
+/* 8. Vibrant Accent Colors */
+html.light .text-emerald-400,
+html.light .text-emerald-300 {
+  color: #059669 !important;
+}
+html.light .text-indigo-400,
+html.light .text-indigo-300 {
+  color: #4f46e5 !important;
+}
+html.light .text-blue-400 {
+  color: #0284c7 !important;
+}
+html.light .text-rose-400 {
+  color: #e11d48 !important;
+}
+html.light .text-amber-400 {
+  color: #d97706 !important;
+}
+html.light .text-purple-400 {
+  color: #7c3aed !important;
+}
+
+/* 9. Soft Pill Badge Background Tints */
+html.light .bg-emerald-500\/10,
+html.light .bg-emerald-500\/20,
+html.light .bg-emerald-600\/10,
+html.light .bg-emerald-600\/20 {
+  background-color: #dcfce7 !important;
+  border-color: #86efac !important;
+  color: #15803d !important;
+}
+html.light .bg-emerald-500\/10 *,
+html.light .bg-emerald-500\/20 * {
+  color: #15803d !important;
+}
+
+html.light .bg-indigo-500\/10,
+html.light .bg-indigo-500\/20,
+html.light .bg-indigo-600\/10,
+html.light .bg-indigo-600\/20 {
+  background-color: #e0e7ff !important;
+  border-color: #a5b4fc !important;
+  color: #4338ca !important;
+}
+html.light .bg-indigo-500\/10 *,
+html.light .bg-indigo-500\/20 * {
+  color: #4338ca !important;
+}
+
+html.light .bg-rose-500\/10,
+html.light .bg-rose-500\/20 {
+  background-color: #ffe4e6 !important;
+  border-color: #fca5a5 !important;
+  color: #be123c !important;
+}
+
+html.light .bg-amber-500\/10,
+html.light .bg-amber-500\/20 {
+  background-color: #fef3c7 !important;
+  border-color: #fcd34d !important;
+  color: #b45309 !important;
+}
+
+/* 10. Gradient and Primary Action Buttons (Glowing White on Rich Gradient) */
+html.light .bg-gradient-to-r,
+html.light .bg-indigo-600,
+html.light .bg-indigo-500,
+html.light .bg-blue-600,
+html.light .bg-emerald-600 {
+  box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.25) !important;
+}
+
+html.light .bg-indigo-600 *,
+html.light .bg-indigo-500 *,
+html.light .bg-blue-600 *,
+html.light .bg-emerald-600 *,
+html.light .bg-gradient-to-r * {
+  color: #ffffff !important;
+}
+
+/* 11. Form Inputs & Textareas */
+html.light input,
+html.light select,
+html.light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input:focus,
+html.light select:focus,
+html.light textarea:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.18) !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* 12. Card Gradients Replacement */
+html.light .from-blue-950,
+html.light .from-blue-950\/90,
+html.light .from-blue-950\/70,
+html.light .from-emerald-950,
+html.light .from-emerald-950\/90,
+html.light .from-indigo-950,
+html.light .from-indigo-950\/90,
+html.light .from-slate-900,
+html.light .from-slate-950 {
+  background-image: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* 13. Modal Dialog Backdrop Overlays */
+html.light .bg-black\/85,
+html.light .bg-black\/80,
+html.light .bg-black\/75,
+html.light .bg-black\/70,
+html.light .bg-\[\#09090B\]\/80 {
+  background-color: rgba(15, 23, 42, 0.35) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* 14. Terminal & Log Output Console in Light Mode (No Black - Clean Cyber White/Slate) */
+html.light pre,
+html.light code {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light pre *,
+html.light code * {
+  color: #0f172a !important;
+}
+
+/* 15. Custom Sleek Scrollbars */
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

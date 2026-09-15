@@ -1,0 +1,26 @@
+{
+  "entities": {
+    "appSettings": {
+      "title": "App Settings",
+      "description": "Global settings for the application including custom logo",
+      "type": "object",
+      "properties": {
+        "customLogoUrl": {
+          "type": "string",
+          "description": "Base64 or URL of custom logo image"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last logo update"
+        }
+      },
+      "required": ["updatedAt"]
+    }
+  },
+  "firestore": {
+    "settings/app": {
+      "entity": "appSettings",
+      "description": "Global application configuration singleton"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Wieszka Antivirus",
+  "description": "Zaawansowany program antywirusowy Wieszka do dokładnego skanowania plików, ochrony w czasie rzeczywistym i analizy zagrożeń z AI.",
+  "requestFramePermissions": ["microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
