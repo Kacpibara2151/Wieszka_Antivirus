@@ -39,7 +39,7 @@ export const RealtimeShieldsView: React.FC<RealtimeShieldsViewProps> = ({
               <ShieldAlert className="w-5 h-5 text-emerald-400" />
             </span>
             <h2 className="text-xl font-bold text-white tracking-tight">
-              {t(currentLang, 'realtimeShields')}
+              {getText(currentLang, 'Tarcze Ochronne w Czasie Rzeczywistym', 'Real-Time Protection Shields')}
             </h2>
           </div>
           <p className="text-xs text-slate-400 mt-1 max-w-xl leading-relaxed">

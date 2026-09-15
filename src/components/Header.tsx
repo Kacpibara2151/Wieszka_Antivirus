@@ -78,8 +78,8 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Main Bar */}
       <div className="px-8 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-[#09090B]">
         <div className="flex items-center space-x-4">
-          <div className="relative group">
-            <WieszkaLogo className="w-13 h-13" customLogoUrl={customLogoUrl} showGlow={isProtected} />
+          <div className="relative">
+            <WieszkaLogo className="w-16 h-16 sm:w-20 sm:h-20" customLogoUrl={customLogoUrl} showGlow={isProtected} />
           </div>
           <div>
             <div className="flex items-center space-x-3">
@@ -91,6 +91,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
+
           {/* Permanent Admin Mode Switch (Only for kacpi2151@gmail.com) */}
           {isAdminEligible && onToggleAdminMode && (
             <div

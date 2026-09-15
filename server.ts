@@ -264,9 +264,15 @@ app.post("/api/auth/send-code", async (req, res) => {
 // Health check endpoint
 let globalCustomLogo: string | null = null;
 
-// Global Custom Logo Endpoint (Read-only)
+// Global Custom Logo Endpoints
 app.get("/api/logo", (req, res) => {
   res.json({ customLogoUrl: globalCustomLogo });
+});
+
+app.post("/api/logo", (req, res) => {
+  const { customLogoUrl } = req.body || {};
+  globalCustomLogo = customLogoUrl || null;
+  res.json({ success: true, customLogoUrl: globalCustomLogo });
 });
 
 app.get("/api/health", (req, res) => {
